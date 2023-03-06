@@ -6,7 +6,7 @@ import { MenuButton } from '../Style/MenuStyle'; // 3. Compnents명Style.js
 export default function Menu() {
   return (
     <div className="Menu">
-      <Tooltip title="버튼">
+      <Tooltip>
         <MenuButton shape="circle" icon={<FilterOutlined />} />
       </Tooltip>
     </div>
