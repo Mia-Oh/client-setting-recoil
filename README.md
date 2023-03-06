@@ -9,6 +9,7 @@ When starting a react project with Recoil.
 	3. Styled Component
 	4. react-icons
 	5. dotenv
+	6. antd
 
 
 ### 🍀 devDependencies
