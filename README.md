@@ -10,6 +10,9 @@ When starting a react project with Recoil.
 	4. react-icons
 	5. dotenv
 	6. antd
+	7. Axios
+	8. React-Router
+	9. React-Quill
 
 
 ### 🍀 devDependencies
