@@ -1,6 +1,15 @@
 import { textState } from '../atoms/atoms';
 import { selector, useRecoilValue, useSetRecoilState } from 'recoil';
 
+const charCountState = selector({
+  key: 'charCountState', // unique ID (with respect to other atoms/selectors)
+  get: ({ get }) => {
+    const text = get(textState);
+
+    return text.length;
+  },
+});
+
 function CharacterCounter() {
   return (
     <div>
@@ -26,15 +35,6 @@ function TextInput() {
     </div>
   );
 }
-
-const charCountState = selector({
-  key: 'charCountState', // unique ID (with respect to other atoms/selectors)
-  get: ({ get }) => {
-    const text = get(textState);
-
-    return text.length;
-  },
-});
 
 function CharacterCount() {
   const count = useRecoilValue(charCountState);
